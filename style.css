@@ -1,0 +1,170 @@
+/* common style  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Geist", sans-serif;
+}
+
+body {
+  background-color: #F8FAFC;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 60px auto;
+}
+
+/* header section  */
+h1 {
+  color: #002C5C;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.display-card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.display-card {
+  background-color: white;
+  padding: 1.25rem;
+  width: 100%;
+}
+
+.display-card p:last-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#total-count {
+  color: #002C5C;
+}
+
+#interview-count,
+#interview-btn {
+  color: #10B981;
+}
+
+#rejected-count,
+#rejected-btn {
+  color: #EF4444;
+}
+
+hr {
+  border: none;
+  background-color: #E6E7E9;
+  height: 1px;
+  color: #E6E7E9;
+  margin: 2rem 0;
+}
+
+/* main section  */
+.job-count-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  color: #002C5C;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.job-count-container p {
+  color: #64748B;
+  font-size: 1rem;
+}
+
+.toggle-btn-container {
+  display: flex;
+  gap: .5rem;
+  padding: 1.5rem 0;
+}
+
+.toggle-btn-container button {
+  border: none;
+  background-color: white;
+  color: #000;
+  text-transform: capitalize;
+  padding: 10px 14px;
+  border-radius: 5px;
+  min-width: 80px;
+  cursor: pointer;
+}
+
+.toggle-btn-container .active-btn {
+  background-color: #3B82F6;
+  color: white;
+}
+
+/* card section  */
+.card {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 24px;
+}
+
+h3 {
+  color: #002C5C;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.card p {
+  color: #64748B;
+}
+
+.job-meta-data {
+  display: flex;
+  gap: .5rem;
+  padding: 1.25rem 0;
+}
+
+.job-status {
+  background-color: #dfefff;
+  color: #000913;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  display: inline-block;
+  font-weight: 500;
+  margin-bottom: .5rem;
+}
+
+.card-btn-container {
+  display: flex;
+  gap: .5rem;
+  margin: 1.25rem 0;
+}
+
+.card-btn-container button {
+  padding: 8px 12px;
+  border: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#interview-btn {
+  border: 1px solid #10B981;
+}
+
+#rejected-btn {
+  border: 1px solid #EF4444;
+}
+
+.delete-btn i {
+  color: #64748B;
+  border: 1px solid #64748B;
+  border-radius: 50%;
+  padding: .60rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

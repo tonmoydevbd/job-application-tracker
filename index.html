@@ -5,53 +5,233 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Job Application Tracker</title>
+
+  <!-- google font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- font awesome cdn  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- custom css  -->
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="container">
   <header>
     <h1>Job Application Tracker</h1>
-    <div>
-      <div>
+    <div class="display-card-container">
+      <div class="display-card">
         <p>Total</p>
-        <p>0</p>
+        <p id="total-count">0</p>
       </div>
-      <div>
+      <div class="display-card">
         <p>Interview</p>
-        <p>0</p>
+        <p id="interview-count">0</p>
       </div>
-      <div>
+      <div class="display-card">
         <p>Rejected</p>
-        <p>0</p>
+        <p id="rejected-count">0</p>
       </div>
     </div>
   </header>
   <hr>
   <main>
-    <div>
+    <div class="job-count-container">
       <h2>Available Jobs</h2>
       <p>0 jobs</p>
     </div>
-    <div>
-      <button>All</button>
+    <div class="toggle-btn-container">
+      <button class="active-btn">All</button>
       <button>Interview</button>
       <button>Rejected</button>
     </div>
     <section>
-      <article>
-        <h3>Mobile First Corp</h3>
-        <p>React Native Developer</p>
+      <article class="card">
         <div>
-          <p>Remote</p>
-          <p>Full Time</p>
-          <p>$130,000 - $175,000</p>
+          <h3>Mobile First Corp</h3>
+          <p>React Native Developer</p>
+          <div class="job-meta-data">
+            <p>Remote</p>
+            <p>.</p>
+            <p>Full Time</p>
+            <p>.</p>
+            <p>$130,000 - $175,000</p>
+          </div>
+          <p class="job-status">Not Applied</p>
+          <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users
+            worldwide.</p>
+          <div class="card-btn-container">
+            <button id="interview-btn">Interview</button>
+            <button id="rejected-btn">Rejected</button>
+          </div>
         </div>
-        <p>Not Applied</p>
-        <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users
-          worldwide.</p>
+        <div class="delete-btn">
+          <i class="fa-regular fa-trash-can"></i>
+        </div>
+      </article>
+      <article class="card">
         <div>
-          <button>Interview</button>
-          <button>Rejected</button>
+          <h3>Mobile First Corp</h3>
+          <p>React Native Developer</p>
+          <div class="job-meta-data">
+            <p>Remote</p>
+            <p>.</p>
+            <p>Full Time</p>
+            <p>.</p>
+            <p>$130,000 - $175,000</p>
+          </div>
+          <p class="job-status">Not Applied</p>
+          <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users
+            worldwide.</p>
+          <div class="card-btn-container">
+            <button id="interview-btn">Interview</button>
+            <button id="rejected-btn">Rejected</button>
+          </div>
+        </div>
+        <div class="delete-btn">
+          <i class="fa-regular fa-trash-can"></i>
+        </div>
+      </article>
+      <article class="card">
+        <div>
+          <h3>Mobile First Corp</h3>
+          <p>React Native Developer</p>
+          <div class="job-meta-data">
+            <p>Remote</p>
+            <p>.</p>
+            <p>Full Time</p>
+            <p>.</p>
+            <p>$130,000 - $175,000</p>
+          </div>
+          <p class="job-status">Not Applied</p>
+          <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users
+            worldwide.</p>
+          <div class="card-btn-container">
+            <button id="interview-btn">Interview</button>
+            <button id="rejected-btn">Rejected</button>
+          </div>
+        </div>
+        <div class="delete-btn">
+          <i class="fa-regular fa-trash-can"></i>
+        </div>
+      </article>
+      <article class="card">
+        <div>
+          <h3>Mobile First Corp</h3>
+          <p>React Native Developer</p>
+          <div class="job-meta-data">
+            <p>Remote</p>
+            <p>.</p>
+            <p>Full Time</p>
+            <p>.</p>
+            <p>$130,000 - $175,000</p>
+          </div>
+          <p class="job-status">Not Applied</p>
+          <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users
+            worldwide.</p>
+          <div class="card-btn-container">
+            <button id="interview-btn">Interview</button>
+            <button id="rejected-btn">Rejected</button>
+          </div>
+        </div>
+        <div class="delete-btn">
+          <i class="fa-regular fa-trash-can"></i>
+        </div>
+      </article>
+      <article class="card">
+        <div>
+          <h3>Mobile First Corp</h3>
+          <p>React Native Developer</p>
+          <div class="job-meta-data">
+            <p>Remote</p>
+            <p>.</p>
+            <p>Full Time</p>
+            <p>.</p>
+            <p>$130,000 - $175,000</p>
+          </div>
+          <p class="job-status">Not Applied</p>
+          <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users
+            worldwide.</p>
+          <div class="card-btn-container">
+            <button id="interview-btn">Interview</button>
+            <button id="rejected-btn">Rejected</button>
+          </div>
+        </div>
+        <div class="delete-btn">
+          <i class="fa-regular fa-trash-can"></i>
+        </div>
+      </article>
+      <article class="card">
+        <div>
+          <h3>Mobile First Corp</h3>
+          <p>React Native Developer</p>
+          <div class="job-meta-data">
+            <p>Remote</p>
+            <p>.</p>
+            <p>Full Time</p>
+            <p>.</p>
+            <p>$130,000 - $175,000</p>
+          </div>
+          <p class="job-status">Not Applied</p>
+          <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users
+            worldwide.</p>
+          <div class="card-btn-container">
+            <button id="interview-btn">Interview</button>
+            <button id="rejected-btn">Rejected</button>
+          </div>
+        </div>
+        <div class="delete-btn">
+          <i class="fa-regular fa-trash-can"></i>
+        </div>
+      </article>
+      <article class="card">
+        <div>
+          <h3>Mobile First Corp</h3>
+          <p>React Native Developer</p>
+          <div class="job-meta-data">
+            <p>Remote</p>
+            <p>.</p>
+            <p>Full Time</p>
+            <p>.</p>
+            <p>$130,000 - $175,000</p>
+          </div>
+          <p class="job-status">Not Applied</p>
+          <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users
+            worldwide.</p>
+          <div class="card-btn-container">
+            <button id="interview-btn">Interview</button>
+            <button id="rejected-btn">Rejected</button>
+          </div>
+        </div>
+        <div class="delete-btn">
+          <i class="fa-regular fa-trash-can"></i>
+        </div>
+      </article>
+      <article class="card">
+        <div>
+          <h3>Mobile First Corp</h3>
+          <p>React Native Developer</p>
+          <div class="job-meta-data">
+            <p>Remote</p>
+            <p>.</p>
+            <p>Full Time</p>
+            <p>.</p>
+            <p>$130,000 - $175,000</p>
+          </div>
+          <p class="job-status">Not Applied</p>
+          <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users
+            worldwide.</p>
+          <div class="card-btn-container">
+            <button id="interview-btn">Interview</button>
+            <button id="rejected-btn">Rejected</button>
+          </div>
+        </div>
+        <div class="delete-btn">
+          <i class="fa-regular fa-trash-can"></i>
         </div>
       </article>
     </section>
