@@ -15,6 +15,18 @@ body {
   margin: 60px auto;
 }
 
+p {
+  color: #64748B;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 /* header section  */
 h1 {
   color: #002C5C;
@@ -73,10 +85,10 @@ h2 {
   font-weight: 600;
 }
 
-.job-count-container p {
+/* .job-count-container p {
   color: #64748B;
   font-size: 1rem;
-}
+} */
 
 .toggle-btn-container {
   display: flex;
@@ -116,9 +128,9 @@ h3 {
   font-weight: 500;
 }
 
-.card p {
+/* .card p {
   color: #64748B;
-}
+} */
 
 .job-meta-data {
   display: flex;
@@ -167,4 +179,11 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.no-jobs-section {
+  text-align: center;
+  padding: 111px 0;
+  background-color: white;
+  border-radius: 1.5rem;
 }
