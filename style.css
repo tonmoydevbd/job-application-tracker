@@ -39,7 +39,7 @@ h1 {
   font-weight: bold;
 }
 
-#total-count {
+.total-count-style {
   color: #002C5C;
 }
 

@@ -1,4 +1,4 @@
-const jobData = [
+const jobsData = [
   {
     id: 0,
     companyName: 'Mobile First Corp',
