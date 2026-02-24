@@ -60,25 +60,45 @@ allCardBtn.addEventListener('click', () => {
   allCardBtn.classList.add('active-btn');
   interviewBtn.classList.remove('active-btn');
   rejectedBtn.classList.remove('active-btn');
-  renderCard(jobsData);
+  refreshView()
 });
 interviewBtn.addEventListener('click', () => {
   interviewBtn.classList.add('active-btn');
   allCardBtn.classList.remove('active-btn');
   rejectedBtn.classList.remove('active-btn');
-  renderCard(interviewCardData);
+  refreshView()
 });
 rejectedBtn.addEventListener('click', () => {
   rejectedBtn.classList.add('active-btn');
   allCardBtn.classList.remove('active-btn');
   interviewBtn.classList.remove('active-btn');
-  renderCard(rejectedCardData)
+  refreshView()
 });
 
 
 document.getElementById('card-section').addEventListener('click', (e) => {
   const clickedBtn = e.target;
   const targetCardId = Number(clickedBtn.parentElement.parentElement.parentElement.getAttribute('id'));
+
+  if (e.target.classList.contains('fa-trash-can')) {
+    const clickedTrashCanCardId = Number(e.target.parentElement.parentElement.getAttribute('id'));
+    if (allCardBtn.classList.contains('active-btn')) {
+      jobsData = jobsData.filter(item => item.id !== clickedTrashCanCardId)
+      updateCount();
+      refreshView();
+    } else if (interviewBtn.classList.contains('active-btn')) {
+      interviewCardData = interviewCardData.filter(item => item.id !== clickedTrashCanCardId)
+      jobsData = jobsData.filter(item => item.id !== clickedTrashCanCardId)
+      updateCount();
+      refreshView();
+    } else if (rejectedBtn.classList.contains('active-btn')) {
+      rejectedCardData = rejectedCardData.filter(item => item.id !== clickedTrashCanCardId)
+      jobsData = jobsData.filter(item => item.id !== clickedTrashCanCardId)
+      updateCount();
+      refreshView();
+    }
+
+  }
 
   if (clickedBtn.innerText === 'REJECTED') {
     jobsData.forEach(item => {
