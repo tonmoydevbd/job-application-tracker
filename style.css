@@ -23,10 +23,6 @@ p {
   display: none;
 }
 
-.show {
-  display: block;
-}
-
 /* header section  */
 h1 {
   color: #002C5C;
@@ -51,7 +47,7 @@ h1 {
   font-weight: bold;
 }
 
-.total-count-style {
+#total-jobs-style {
   color: #002C5C;
 }
 

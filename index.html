@@ -20,13 +20,14 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="container">
+
+<body class="container" onload="renderCard(jobsData); allCardBtn.classList.add('active-btn');">
   <header>
     <h1>Job Application Tracker</h1>
     <div class="display-card-container">
       <div class="display-card">
         <p>Total</p>
-        <p class="total-jobs total-count-style">0</p>
+        <p id="total-jobs-style" class="total-jobs">0</p>
       </div>
       <div class="display-card">
         <p>Interview</p>
@@ -49,7 +50,7 @@
       <button id="interview-card-btn">Interview</button>
       <button id="rejected-card-btn">Rejected</button>
     </div>
-    <section>
+    <section id="card-section">
     </section>
     <section class="no-jobs-section hide">
       <img src="./images/jobs.png" alt="">
