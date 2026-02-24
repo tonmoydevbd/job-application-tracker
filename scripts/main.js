@@ -14,9 +14,12 @@ const allCardBtn = toggleBtnContainer.children[0];
 const interviewBtn = toggleBtnContainer.children[1];
 const rejectedBtn = toggleBtnContainer.children[2];
 
-totalJobsCountEl.forEach(item => item.innerText = jobsData.length);
-interviewCountEl.innerText = interviewCardData.length;
-rejectedCountEl.innerText = rejectedCardData.length;
+function updateCount() {
+  totalJobsCountEl.forEach(item => item.innerText = jobsData.length);
+  interviewCountEl.innerText = interviewCardData.length;
+  rejectedCountEl.innerText = rejectedCardData.length;
+}
+updateCount();
 
 function renderCard(data) {
   sectionEl.innerHTML = '';
@@ -90,7 +93,8 @@ document.getElementById('card-section').addEventListener('click', (e) => {
     rejectedCardData = rejectedCardData.filter((item, index, self) => {
       return self.indexOf(item) === index;
     })
-    refreshView()
+    updateCount();
+    refreshView();
 
   } else if (clickedBtn.innerText === 'INTERVIEW') {
     jobsData.forEach(item => {
@@ -105,7 +109,8 @@ document.getElementById('card-section').addEventListener('click', (e) => {
     interviewCardData = interviewCardData.filter((item, index, self) => {
       return self.indexOf(item) === index;
     })
-    refreshView()
+    updateCount();
+    refreshView();
 
   }
 })
