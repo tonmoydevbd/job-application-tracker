@@ -32,9 +32,9 @@ function renderCard(data) {
           <p>${card.position}</p>
           <div class="job-meta-data">
             <p>${card.location}</p>
-            <p>.</p>
+            <p class="only-dot">.</p>
             <p>${card.type}</p>
-            <p>.</p>
+            <p class="only-dot">.</p>
             <p>$${card.salary.lowerRange} - $${card.salary.upperRange}</p>
           </div>
           <p class="job-status">${card.status}</p>

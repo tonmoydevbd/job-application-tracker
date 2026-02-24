@@ -175,6 +175,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .no-jobs-section {
@@ -182,4 +183,22 @@ h3 {
   padding: 111px 0;
   background-color: white;
   border-radius: 1.5rem;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    margin: 20px 5%;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .job-meta-data {
+    flex-direction: column;
+  }
+
+  .only-dot {
+    display: none;
+  }
 }
