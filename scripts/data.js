@@ -30,7 +30,7 @@ let jobsData = [
     companyName: 'DataViz Solutions',
     position: 'Data Visualization Specialist',
     location: 'Boston, MA',
-    type: '',
+    type: 'Part-time',
     salary: {
       upperRange: 165000,
       lowerRange: 125000
