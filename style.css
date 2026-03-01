@@ -23,6 +23,14 @@ p {
   display: none;
 }
 
+.green-body {
+  background-color: #defaf1 !important;
+}
+
+.red-body {
+  background-color: #f8e4e4 !important;
+}
+
 /* header section  */
 h1 {
   color: #002C5C;
@@ -56,9 +64,18 @@ h1 {
   color: #10B981;
 }
 
+#interview-btn:hover {
+  background-color: #a8fae0;
+}
+
 #rejected-count,
 #rejected-btn {
   color: #EF4444;
+}
+
+#rejected-btn:hover,
+.delete-btn i:hover {
+  background-color: #f9b3b3;
 }
 
 hr {
@@ -80,11 +97,6 @@ h2 {
   font-size: 1.5rem;
   font-weight: 600;
 }
-
-/* .job-count-container p {
-  color: #64748B;
-  font-size: 1rem;
-} */
 
 .toggle-btn-container {
   display: flex;
@@ -123,10 +135,6 @@ h3 {
   font-size: 1.5rem;
   font-weight: 500;
 }
-
-/* .card p {
-  color: #64748B;
-} */
 
 .job-meta-data {
   display: flex;
@@ -171,7 +179,7 @@ h3 {
   color: #64748B;
   border: 1px solid #64748B;
   border-radius: 50%;
-  padding: .60rem 1rem;
+  padding: .5rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,6 +200,10 @@ h3 {
 
   h1 {
     text-align: center;
+  }
+
+  .card {
+    padding: .5rem;
   }
 
   .job-meta-data {
